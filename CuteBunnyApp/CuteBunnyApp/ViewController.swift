@@ -46,6 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.gifID.text = gifs![indexPath.row].id
             cell.gifRating.text = gifs![indexPath.row].rating
             cell.gifSlug.text = gifs![indexPath.row].slug
+//            cell.gifImageView
         }
         
         return cell

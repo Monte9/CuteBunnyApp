@@ -16,6 +16,8 @@ class GifCell: UITableViewCell {
     
     @IBOutlet weak var gifSlug: UILabel!
     
+    @IBOutlet weak var gifImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

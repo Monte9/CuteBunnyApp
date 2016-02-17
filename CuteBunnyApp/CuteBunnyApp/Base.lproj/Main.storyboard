@@ -46,19 +46,27 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ien-BO-gNB">
+                                                    <rect key="frame" x="0.0" y="32" width="320" height="170"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Dmu-Y7-5Tz" firstAttribute="top" secondItem="ISQ-lo-Itf" secondAttribute="top" constant="7" id="0MI-ZP-PB3"/>
+                                                <constraint firstAttribute="trailing" secondItem="ien-BO-gNB" secondAttribute="trailing" id="4k6-MD-Q0a"/>
                                                 <constraint firstItem="aAP-Id-Iix" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dmu-Y7-5Tz" secondAttribute="trailing" constant="8" id="EpG-3f-jNt"/>
+                                                <constraint firstAttribute="bottom" secondItem="ien-BO-gNB" secondAttribute="bottom" id="QpC-WS-e3a"/>
                                                 <constraint firstItem="aAP-Id-Iix" firstAttribute="top" secondItem="ISQ-lo-Itf" secondAttribute="top" constant="8" id="ck6-kB-5CO"/>
                                                 <constraint firstItem="rEp-Od-A4P" firstAttribute="top" secondItem="ISQ-lo-Itf" secondAttribute="top" constant="8" id="dkm-9u-QQE"/>
+                                                <constraint firstItem="ien-BO-gNB" firstAttribute="top" secondItem="Dmu-Y7-5Tz" secondAttribute="bottom" constant="8" id="gyU-KE-IGE"/>
                                                 <constraint firstItem="rEp-Od-A4P" firstAttribute="leading" secondItem="ISQ-lo-Itf" secondAttribute="leading" constant="8" id="o9c-sB-9E6"/>
                                                 <constraint firstItem="Dmu-Y7-5Tz" firstAttribute="leading" secondItem="rEp-Od-A4P" secondAttribute="trailing" constant="8" id="qDm-Lr-igU"/>
+                                                <constraint firstItem="ien-BO-gNB" firstAttribute="leading" secondItem="ISQ-lo-Itf" secondAttribute="leading" id="rpD-FK-wdG"/>
                                                 <constraint firstAttribute="trailing" secondItem="aAP-Id-Iix" secondAttribute="trailing" constant="8" id="tS5-rZ-52l"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="gifID" destination="rEp-Od-A4P" id="9It-Xq-94d"/>
+                                            <outlet property="gifImageView" destination="ien-BO-gNB" id="05V-oS-yk9"/>
                                             <outlet property="gifRating" destination="aAP-Id-Iix" id="N5a-gi-gdH"/>
                                             <outlet property="gifSlug" destination="Dmu-Y7-5Tz" id="PC8-LC-nLe"/>
                                         </connections>
