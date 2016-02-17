@@ -17,7 +17,6 @@ class Gif: NSObject {
     
     init(dictionary: NSDictionary) {
         id = dictionary["id"] as? String
-        print("Gif id: \(id)")
         rating = dictionary["rating"] as? String
         slug = dictionary["slug"] as? String
     }

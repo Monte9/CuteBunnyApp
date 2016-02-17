@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA13F1151C74739F0041E7CA"
-               BuildableName = "CuteBunny.app"
-               BlueprintName = "CuteBunny"
-               ReferencedContainer = "container:CuteBunny.xcodeproj">
+               BlueprintIdentifier = "FA13F1411C752C4E0041E7CA"
+               BuildableName = "CuteBunnyApp.app"
+               BlueprintName = "CuteBunnyApp"
+               ReferencedContainer = "container:CuteBunnyApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA13F1151C74739F0041E7CA"
-            BuildableName = "CuteBunny.app"
-            BlueprintName = "CuteBunny"
-            ReferencedContainer = "container:CuteBunny.xcodeproj">
+            BlueprintIdentifier = "FA13F1411C752C4E0041E7CA"
+            BuildableName = "CuteBunnyApp.app"
+            BlueprintName = "CuteBunnyApp"
+            ReferencedContainer = "container:CuteBunnyApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA13F1151C74739F0041E7CA"
-            BuildableName = "CuteBunny.app"
-            BlueprintName = "CuteBunny"
-            ReferencedContainer = "container:CuteBunny.xcodeproj">
+            BlueprintIdentifier = "FA13F1411C752C4E0041E7CA"
+            BuildableName = "CuteBunnyApp.app"
+            BlueprintName = "CuteBunnyApp"
+            ReferencedContainer = "container:CuteBunnyApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA13F1151C74739F0041E7CA"
-            BuildableName = "CuteBunny.app"
-            BlueprintName = "CuteBunny"
-            ReferencedContainer = "container:CuteBunny.xcodeproj">
+            BlueprintIdentifier = "FA13F1411C752C4E0041E7CA"
+            BuildableName = "CuteBunnyApp.app"
+            BlueprintName = "CuteBunnyApp"
+            ReferencedContainer = "container:CuteBunnyApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

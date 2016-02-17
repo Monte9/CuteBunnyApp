@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CuteBunny.xcscheme</key>
+		<key>CuteBunnyApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>FA13F1151C74739F0041E7CA</key>
+		<key>FA13F1411C752C4E0041E7CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
