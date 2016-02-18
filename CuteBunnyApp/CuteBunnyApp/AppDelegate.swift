@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Set up the Home (cute bunny) View Controller
         let homeNavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
         let homeViewController = homeNavigationController.topViewController as! ViewController
+        homeViewController.isTrending = false
         homeNavigationController.tabBarItem.title = "Home"
         homeNavigationController.tabBarItem.image = UIImage(named: "rabbit")
         
@@ -54,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Set up the Trending View Controller
         let trendingNavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
         let trendingViewController = homeNavigationController.topViewController as! ViewController
+        trendingViewController.isTrending = true
         trendingNavigationController.tabBarItem.title = "Trending"
         trendingNavigationController.tabBarItem.image = UIImage(named: "trending")
         

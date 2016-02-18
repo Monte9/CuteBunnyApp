@@ -9,5 +9,7 @@ pod "UIColor_Hex_Swift"
 
 pod "AFNetworking"
 
+pod "Gifu"
+
 end
 

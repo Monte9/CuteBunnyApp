@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Gifu
 
 class GifCell: UITableViewCell {
 
@@ -16,7 +17,7 @@ class GifCell: UITableViewCell {
     
     @IBOutlet weak var gifSlug: UILabel!
     
-    @IBOutlet weak var gifImageView: UIImageView!
+    @IBOutlet weak var gifImageView: AnimatableImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

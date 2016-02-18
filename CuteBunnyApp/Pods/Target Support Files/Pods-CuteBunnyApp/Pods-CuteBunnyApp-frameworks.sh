@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-CuteBunnyApp/AFNetworking.framework"
+  install_framework "Pods-CuteBunnyApp/Gifu.framework"
   install_framework "Pods-CuteBunnyApp/UIColor_Hex_Swift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-CuteBunnyApp/AFNetworking.framework"
+  install_framework "Pods-CuteBunnyApp/Gifu.framework"
   install_framework "Pods-CuteBunnyApp/UIColor_Hex_Swift.framework"
 fi
