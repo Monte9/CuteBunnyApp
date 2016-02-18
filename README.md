@@ -2,7 +2,7 @@
 
 **CuteBunny App** is a iOS app written in Swift 2.1 that displays gifs of cute bunnies + trending gifs using the [Giphy APIs] (https://github.com/Giphy/GiphyAPI). 
 
-Time spent: **8** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
@@ -22,7 +22,7 @@ Here's a walkthrough of implemented user stories:
 
 *Iteration 2*
 
-![Iteration 2](cutebunny-demo2.gif)
+![Iteration 2](cutebunny-demo2.1.gif)
 
 ## Notes
 
