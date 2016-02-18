@@ -15,7 +15,9 @@ The following **functionality** is completed:
 
 Here's a walkthrough of implemented user stories: (*click on the image below to view the gif on Youtube*)
 
-![walkthrough](cutebunny-demo.gif)
+![Iteration 1](cutebunny-demo.gif)
+
+![Iteration 2](cutebunny-demo2.gif)
 
 ## Notes
 

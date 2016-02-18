@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let homeNavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
         let homeViewController = homeNavigationController.topViewController as! ViewController
         homeViewController.isTrending = false
-        
+        homeViewController.tabBarItem.title = "Home"
         //Customize Home navigation bar UI
         homeNavigationController.navigationBar.barTintColor = UIColor.blackColor()
         homeNavigationController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(rgba: "#55acee")]
@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let trendingNavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
         let trendingViewController = homeNavigationController.topViewController as! ViewController
         trendingViewController.isTrending = true
-        
+        trendingViewController.tabBarItem.title = "Trending"
         
         //Customize Trending navigation bar UI
         trendingNavigationController.navigationBar.barTintColor = UIColor.blackColor()
@@ -53,9 +53,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         trendingNavigationController.tabBarItem.image = UIImage(named: "trending")
         trendingNavigationController.navigationBar.topItem?.title = "Trending Gifs"
         
-        
         // Set up the Tab Bar Controller to have two tabs
         tabBarController.viewControllers = [homeNavigationController, trendingNavigationController]
+//        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor(rgba: "#55acee")], forState: UIControlState.Normal)
+        
         UITabBar.appearance().tintColor =
             UIColor(rgba: "#55acee")
         UITabBar.appearance().barTintColor = UIColor.blackColor()
