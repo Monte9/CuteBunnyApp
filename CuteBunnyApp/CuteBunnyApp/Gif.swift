@@ -14,13 +14,16 @@ class Gif: NSObject {
     var rating: String?
     var slug: String?
     var stillImageUrl: String?
+    var playingImageUrl: String?
+    var isPlaying: Bool?
     
     init(dictionary: NSDictionary) {
         id = dictionary["id"] as? String
         rating = dictionary["rating"] as? String
         slug = dictionary["slug"] as? String
-        stillImageUrl = dictionary["images"]!["original"]!!["url"] as? String
-      //  print(stillImageUrl)
+        stillImageUrl = dictionary["images"]!["original_still"]!!["url"] as? String
+        playingImageUrl = dictionary["images"]!["original"]!!["url"] as? String
+        isPlaying = false
     }
     
     //convinience method that takes array of dictionaries and returns array of gif

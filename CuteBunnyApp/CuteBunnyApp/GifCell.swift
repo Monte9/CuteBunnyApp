@@ -11,11 +11,11 @@ import Gifu
 
 class GifCell: UITableViewCell {
 
-    @IBOutlet weak var gifID: UILabel!
-    
-    @IBOutlet weak var gifRating: UILabel!
-    
-    @IBOutlet weak var gifSlug: UILabel!
+//    @IBOutlet weak var gifID: UILabel!
+//    
+//    @IBOutlet weak var gifRating: UILabel!
+//    
+//    @IBOutlet weak var gifSlug: UILabel!
     
     @IBOutlet weak var gifImageView: AnimatableImageView!
     

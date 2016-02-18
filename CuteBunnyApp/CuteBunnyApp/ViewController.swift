@@ -60,33 +60,46 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! GifCell
         
         if ((gifs) != nil) {
-            cell.gifID.text = gifs![indexPath.row].id
-            cell.gifRating.text = gifs![indexPath.row].rating
-            cell.gifSlug.text = gifs![indexPath.row].slug
+            //            cell.gifID.text = gifs![indexPath.row].id
+            //            cell.gifRating.text = gifs![indexPath.row].rating
+            //            cell.gifSlug.text = gifs![indexPath.row].slug
             
-        //  cell.gifImageView.setImageWithURL(NSURL(string: gifs![indexPath.row].stillImageUrl!)!)
+            // var gifData = NSData(contentsOfURL: NSURL(string: gifs![indexPath.row].stillImageUrl!)!)
+            // print("Still image set")
             
-            var gifData = NSData(contentsOfURL: NSURL(string: gifs![indexPath.row].stillImageUrl!)!)
-            cell.gifImageView.animateWithImageData(gifData!)
-//            
-//            cell.gifImageView.prepareForAnimation(imageData: gifData!)
-//            cell.gifImageView.startAnimatingGIF()
+            cell.gifImageView.setImageWithURL(NSURL(string: gifs![indexPath.row].stillImageUrl!)!)
+            cell.gifImageView.stopAnimatingGIF()
+           // self.tableView.reloadData()
             
-             //  cell.gifImageView.animateWithImage(named: "sample")
-            //   print("gif set successfully")
+            // cell.gifImageView.prepareForAnimation(imageData: gifData!)
+            // cell.gifImageView.stopAnimatingGIF()
         }
-        
         return cell
-        
     }
-    //
-    //    @IBAction func toggleGif(sender: AnyObject) {
-    //        if imageView.isAnimatingGIF {
-    //            imageView.stopAnimatingGIF()
-    //        } else {
-    //            imageView.startAnimatingGIF()
-    //        }
-    //    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        print("cell click detected index path \(indexPath.row)")
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! GifCell
+        
+        //  if gifs![indexPath.row].isPlaying != true {
+        
+        var gifData = NSData(contentsOfURL: NSURL(string: gifs![indexPath.row].playingImageUrl!)!)
+        
+        cell.gifImageView.prepareForAnimation(imageData: gifData!)
+        cell.gifImageView.startAnimatingGIF()
+      //  self.tableView.reloadData()
+        
+        //  }
+        //        else {
+        //            cell.gifImageView.stopAnimatingGIF()
+        //            gifs![indexPath.row].isPlaying = false
+        //            print("Is playing set to false")
+        //        }
+        //
+        //cell.gifImageView.stopAnimatingGIF()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

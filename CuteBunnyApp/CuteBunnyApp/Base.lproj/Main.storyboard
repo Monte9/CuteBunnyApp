@@ -17,58 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="203" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rel-W0-evQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="282" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rel-W0-evQ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="203" id="Pqu-3V-y6H" customClass="GifCell" customModule="CuteBunnyApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="203"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="282" id="Pqu-3V-y6H" customClass="GifCell" customModule="CuteBunnyApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="282"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pqu-3V-y6H" id="ISQ-lo-Itf">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gif ID" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEp-Od-A4P">
-                                                    <rect key="frame" x="8" y="8" width="32" height="15"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" misplaced="YES" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAP-Id-Iix">
-                                                    <rect key="frame" x="274" y="8" width="40" height="15"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="Gif Slug" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmu-Y7-5Tz">
-                                                    <rect key="frame" x="48" y="7" width="51" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sQP-Uh-a0m" customClass="AnimatableImageView" customModule="Gifu">
-                                                    <rect key="frame" x="0.0" y="32" width="320" height="170"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Dmu-Y7-5Tz" firstAttribute="top" secondItem="ISQ-lo-Itf" secondAttribute="top" constant="7" id="0MI-ZP-PB3"/>
-                                                <constraint firstItem="aAP-Id-Iix" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dmu-Y7-5Tz" secondAttribute="trailing" constant="8" id="EpG-3f-jNt"/>
-                                                <constraint firstItem="sQP-Uh-a0m" firstAttribute="top" secondItem="Dmu-Y7-5Tz" secondAttribute="bottom" constant="8" id="Pu9-6X-xNw"/>
                                                 <constraint firstAttribute="trailing" secondItem="sQP-Uh-a0m" secondAttribute="trailing" id="VVv-fZ-OHH"/>
                                                 <constraint firstItem="sQP-Uh-a0m" firstAttribute="leading" secondItem="ISQ-lo-Itf" secondAttribute="leading" id="Zd9-mk-ZX3"/>
-                                                <constraint firstItem="aAP-Id-Iix" firstAttribute="top" secondItem="ISQ-lo-Itf" secondAttribute="top" constant="8" id="ck6-kB-5CO"/>
-                                                <constraint firstItem="rEp-Od-A4P" firstAttribute="top" secondItem="ISQ-lo-Itf" secondAttribute="top" constant="8" id="dkm-9u-QQE"/>
-                                                <constraint firstAttribute="bottom" secondItem="sQP-Uh-a0m" secondAttribute="bottom" id="grz-y3-fFy"/>
-                                                <constraint firstItem="rEp-Od-A4P" firstAttribute="leading" secondItem="ISQ-lo-Itf" secondAttribute="leading" constant="8" id="o9c-sB-9E6"/>
-                                                <constraint firstItem="Dmu-Y7-5Tz" firstAttribute="leading" secondItem="rEp-Od-A4P" secondAttribute="trailing" constant="8" id="qDm-Lr-igU"/>
-                                                <constraint firstAttribute="trailing" secondItem="aAP-Id-Iix" secondAttribute="trailing" constant="8" id="tS5-rZ-52l"/>
+                                                <constraint firstItem="sQP-Uh-a0m" firstAttribute="top" secondItem="ISQ-lo-Itf" secondAttribute="top" id="cg6-zW-3VM"/>
+                                                <constraint firstAttribute="bottom" secondItem="sQP-Uh-a0m" secondAttribute="bottom" id="ziU-A6-vRf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="gifID" destination="rEp-Od-A4P" id="9It-Xq-94d"/>
                                             <outlet property="gifImageView" destination="sQP-Uh-a0m" id="QPO-ls-9YX"/>
-                                            <outlet property="gifRating" destination="aAP-Id-Iix" id="N5a-gi-gdH"/>
-                                            <outlet property="gifSlug" destination="Dmu-Y7-5Tz" id="PC8-LC-nLe"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -115,5 +87,5 @@
             <point key="canvasLocation" x="116" y="307"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.33333333329999998" green="0.67450980390000004" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

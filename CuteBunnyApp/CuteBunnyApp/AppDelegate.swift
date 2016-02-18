@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UIColor_Hex_Swift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,45 +28,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupTabBars() {
+        
         // Set up the Home (cute bunny) View Controller
         let homeNavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
         let homeViewController = homeNavigationController.topViewController as! ViewController
         homeViewController.isTrending = false
-        homeNavigationController.tabBarItem.title = "Home"
+        
+        //Customize Home navigation bar UI
+        homeNavigationController.navigationBar.barTintColor = UIColor.blackColor()
+        homeNavigationController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(rgba: "#55acee")]
         homeNavigationController.tabBarItem.image = UIImage(named: "rabbit")
-        
-        
-        //        //Customize Popular navigation bar UI
-        //        tweetsNavigationController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(rgba: "#55acee").CGColor]
-        //
-        //        /* Create an Image View to replace the Title View */
-        //        var imageView: UIImageView = UIImageView(frame: CGRectMake(0.0, 0.0, 40.0, 40.0))
-        //
-        //        imageView.contentMode = UIViewContentMode.ScaleAspectFit
-        //
-        //        /* Load an image. Be careful, this image will be cached */
-        //        var image: UIImage = UIImage(named: "Icon-Small-50")!
-        //
-        //        /* Set the image of the Image View */
-        //        imageView.image = image
-        //
-        //        /* Set the Title View */
         homeNavigationController.navigationBar.topItem?.title = "CuteBunny Gifs"
+        
         
         // Set up the Trending View Controller
         let trendingNavigationController = storyboard.instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
         let trendingViewController = homeNavigationController.topViewController as! ViewController
         trendingViewController.isTrending = true
-        trendingNavigationController.tabBarItem.title = "Trending"
-        trendingNavigationController.tabBarItem.image = UIImage(named: "trending")
         
+        
+        //Customize Trending navigation bar UI
+        trendingNavigationController.navigationBar.barTintColor = UIColor.blackColor()
+        trendingNavigationController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(rgba: "#55acee")]
+        trendingNavigationController.tabBarItem.image = UIImage(named: "trending")
         trendingNavigationController.navigationBar.topItem?.title = "Trending Gifs"
         
         
         // Set up the Tab Bar Controller to have two tabs
         tabBarController.viewControllers = [homeNavigationController, trendingNavigationController]
-        // UITabBar.appearance().tintColor = UIColor(rgba: "#55acee")
-        //    UITabBar.appearance().barTintColor = UIColor.blackColor()
+        UITabBar.appearance().tintColor =
+            UIColor(rgba: "#55acee")
+        UITabBar.appearance().barTintColor = UIColor.blackColor()
         
         // Make the Tab Bar Controller the root view controller
         window?.rootViewController = tabBarController

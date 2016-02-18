@@ -48,7 +48,7 @@ public class AnimatableImageView: UIImageView {
   /// - parameter data: GIF image data.
   public func animateWithImageData(data: NSData) {
     prepareForAnimation(imageData: data)
-    startAnimatingGIF()
+   // startAnimatingGIF()
   }
 
   /// Updates the `image` property of the image view if necessary. This method should not be called manually.
