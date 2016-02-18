@@ -64,12 +64,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.gifRating.text = gifs![indexPath.row].rating
             cell.gifSlug.text = gifs![indexPath.row].slug
             
+        //  cell.gifImageView.setImageWithURL(NSURL(string: gifs![indexPath.row].stillImageUrl!)!)
             
+            var gifData = NSData(contentsOfURL: NSURL(string: gifs![indexPath.row].stillImageUrl!)!)
+            cell.gifImageView.animateWithImageData(gifData!)
+//            
+//            cell.gifImageView.prepareForAnimation(imageData: gifData!)
+//            cell.gifImageView.startAnimatingGIF()
             
-            //   cell.gifImageView.animateWithImage(named: "sample.gif")
+             //  cell.gifImageView.animateWithImage(named: "sample")
             //   print("gif set successfully")
-            
-            cell.gifImageView.setImageWithURL(NSURL(string: gifs![indexPath.row].stillImageUrl!)!)
         }
         
         return cell

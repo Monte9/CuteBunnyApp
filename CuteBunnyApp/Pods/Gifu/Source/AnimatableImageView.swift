@@ -21,6 +21,7 @@ public class AnimatableImageView: UIImageView {
   /// - parameter imageName: The name of the GIF file. The method looks for the file in the app bundle.
   public func prepareForAnimation(imageNamed imageName: String) {
     let imagePath = NSBundle.mainBundle().bundleURL.URLByAppendingPathComponent(imageName)
+    print("this is the imagePath: \(imagePath)")
     prepareForAnimation <^> NSData(contentsOfURL: imagePath)
   }
 
