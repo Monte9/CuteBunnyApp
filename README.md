@@ -6,7 +6,7 @@ Time spent: **8** hours spent in total
 
 ## User Stories
 
-The following **required** functionality is completed:
+The following **functionality** is completed:
 
 - [x] User can see the cute bunnies gifs
 - [x] User can see trending gifs
@@ -23,7 +23,9 @@ This was inspired by http://www.randomgoat.com/
 
 3rd Party libraries used:
 1. UIColor_Hex_Swift
+
 2. AFNetworking
+
 3. Gifu
 
 ## License
