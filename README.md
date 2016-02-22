@@ -22,7 +22,7 @@ Here's a walkthrough of implemented user stories:
 
 *Iteration 2*
 
-![Iteration 2](cutebunny-demo2.1.gif)
+![Iteration 2](CuteBunny-final.gif)
 
 ## Notes
 
